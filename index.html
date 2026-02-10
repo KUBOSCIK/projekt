@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matematyczne Ciekawostki</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Matematyczne ciekawostki</h1>
+    <p>Interaktywna strona z krótkimi faktami, quizem i generatorem liczb.</p>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="fact-title">
+      <h2 id="fact-title">🎲 Losowa ciekawostka</h2>
+      <p id="fact">Kliknij przycisk, aby odkryć ciekawostkę matematyczną.</p>
+      <button id="factBtn" type="button">Pokaż ciekawostkę</button>
+    </section>
+
+    <section class="card" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">🧠 Mini quiz</h2>
+      <p id="question"></p>
+      <div id="answers" class="answers"></div>
+      <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+      <button id="nextQuestionBtn" type="button">Następne pytanie</button>
+    </section>
+
+    <section class="card" aria-labelledby="prime-title">
+      <h2 id="prime-title">🔢 Czy to liczba pierwsza?</h2>
+      <label for="numberInput">Wpisz liczbę całkowitą:</label>
+      <div class="row">
+        <input id="numberInput" type="number" min="0" step="1" placeholder="np. 97" />
+        <button id="primeBtn" type="button">Sprawdź</button>
+      </div>
+      <p id="primeResult" class="feedback" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Stworzone jako projekt interaktywnej strony o matematycznych ciekawostkach.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
